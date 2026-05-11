@@ -36,15 +36,29 @@ const LoginPage = () => {
       <div className="pointer-events-none absolute -bottom-20 right-10 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl" />
 
       <section className="hidden px-10 py-12 lg:block">
-        <div className="flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-slate-900/40 p-8 backdrop-blur-xl">
+        <div className="flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-slate-900/40 p-8 backdrop-blur-xl overflow-hidden">
           <div>
             <h1 className="text-4xl font-bold text-white">Team Task Manager</h1>
             <p className="mt-3 text-slate-300">Manage projects, tasks, and teams efficiently.</p>
           </div>
-          <div className="space-y-3 text-sm text-slate-300">
-            <p>- Organize projects with role-based collaboration.</p>
-            <p>- Track progress with smart dashboard analytics.</p>
-            <p>- Keep teams aligned with modern task workflows.</p>
+          <div className="grid gap-4">
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/80 shadow-2xl shadow-black/20">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+                alt="Team collaboration"
+                className="h-72 w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 z-10 rounded-3xl bg-slate-950/90 px-4 py-3 text-white shadow-lg shadow-black/30">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-400">Teamwork</p>
+                <h3 className="mt-1 text-lg font-semibold">Collaborate in one place</h3>
+              </div>
+            </div>
+            <div className="space-y-3 text-sm text-slate-300">
+              <p>- Organize projects with role-based collaboration.</p>
+              <p>- Track progress with smart dashboard analytics.</p>
+              <p>- Keep teams aligned with modern task workflows.</p>
+            </div>
           </div>
         </div>
       </section>
